@@ -1,223 +1,303 @@
-/* =================================
-   MAIN PAGE ONLY (Scoped)
-================================= */
+<!doctype html>
+<html lang="en">
 
-body#home {
-    background: #0a0f1f;
-    color: #e6f1ff;
-    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
-    line-height: 1.6;
-}
+<head>
+    <title>Victoria Ajanaku | Portfolio Hub</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-/* ===============================
-   NAVBAR
-================================ */
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-body#home .navbar {
-    background: #111827 !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
+    <!-- Font Awesome (reliable social icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-body#home .navbar-brand,
-body#home .navbar-nav .nav-link {
-    color: #e6f1ff !important;
-    font-weight: 500;
-}
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="main2.css">
+</head>
 
-body#home .navbar-nav .nav-link:hover {
-    color: #00f5ff !important;
-}
+<body id="home">
 
-/* ===============================
-   HERO / JUMBOTRON
-================================ */
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Victoria Ajanaku</a>
 
-body#home .hero {
-    background: #111827;
-    border-radius: 26px;
-    margin-top: 90px;
-    padding: 80px 25px;
-    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.7);
-}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-body#home .hero h1 {
-    color: #ffffff;
-    font-weight: 700;
-}
+            <div class="collapse navbar-collapse" id="nav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#areas">Portfolio Areas</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-body#home .hero .lead {
-    color: #a5b4fc;
-    max-width: 720px;
-    margin: 0 auto;
-}
+    <!-- Hero / Jumbotron -->
+    <div class="jumbotron jumbotron-fluid text-center hero">
+        <div class="container">
+            <h1 class="display-4 mt-5">
+                Hello, I’m <span class="highlight">Victoria Ajanaku</span>
+            </h1>
+            <p class="lead mt-3">
+                My name is Victoria Ajanaku, a detail-oriented Data Analyst with a strong foundation in data analytics, statistical analysis, and data-driven problem-solving. i am passionate about using data to support research, innovation, and evidence-based decision-making.
 
-/* Highlight name */
+            </p>
 
-body#home .highlight {
-    color: #ff2bd6;
-}
+            <!-- Use anchor styled as button (cleaner than button inside a tag) -->
+            <a href="#areas" class="btn custom-btn mt-2">Explore My Work</a>
+        </div>
+    </div>
 
-/* ===============================
-   BUTTONS
-================================ */
+    <!-- Portfolio Areas (Cards) -->
+    <div class="container mt-5" id="areas">
+        <h2 class="text-center">Portfolio Areas</h2>
+        <p class="text-center intro mt-3">
+            Choose a section to view projects and resources.
+        </p>
+        <div class="row project-row">
 
-body#home .btn {
-    border-radius: 18px;
-    padding: 12px 26px;
-    font-weight: 600;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, color 0.25s ease;
-}
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-3 text-center">
+                <div class="card mb-3 h-100 fancy-card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Excel Dashboard</h5>
+                        <p class="card-text">
+                            Care workforce analytics dashboard with cleaning, pivot tables, KPIs.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="" class="btn custom-btn mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-/* Unified button */
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-3 text-center">
+                <div class="card mb-3 h-100 fancy-card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">SQL Database Project</h5>
+                        <p class="card-text">
+                            Retail customer + orders dataset: JOINs, aggregation, reporting.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="" class="btn custom-btn mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-body#home .custom-btn {
-    background: #00f5ff;
-    border: 2px solid #00f5ff;
-    color: #0a0f1f;
-    border-radius: 999px;
-    padding: 14px 34px;
-    display: inline-block;
-    text-decoration: none;
-    letter-spacing: 0.2px;
-}
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-3 text-center">
+                <div class="card mb-3 h-100 fancy-card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">ETL Pipeline</h5>
+                        <p class="card-text">
+                            Multi-source sales data cleaning & transformation (Power Query).
+                        </p>
+                        <div class="mt-auto">
+                            <a href="" class="btn custom-btn mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-body#home .custom-btn:hover {
-    background: #00d4e0;
-    border-color: #00d4e0;
-    color: #0a0f1f;
-    transform: translateY(-2px);
-    box-shadow: 0 14px 30px rgba(0, 245, 255, 0.35);
-}
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-lg-3 text-center">
+                <div class="card mb-3 h-100 fancy-card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Power BI Dashboard</h5>
+                        <p class="card-text">
+                            E-commerce customer insight dashboard with DAX KPIs.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="" class="btn custom-btn mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-body#home .custom-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(0, 245, 255, 0.35);
-}
+        </div>
+        <div class="row project-row">
 
-/* ===============================
-   SECTIONS
-================================ */
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-lg-3 text-center">
+                <div class="card mb-3 h-100 fancy-card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Tableau Dashboard</h5>
+                        <p class="card-text">
+                            Social media engagement analytics using interactive storytelling.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="#contact" class="btn custom-btn mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-body#home h2 {
-    font-weight: 700;
-    color: #e6f1ff;
-}
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-3 text-center">
+                <div class="card mb-3 h-100 fancy-card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Python Project</h5>
+                        <p class="card-text">
+                            Customer behaviour dataset: pandas, visualisation, trends & insights.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="#contact" class="btn custom-btn mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-body#home .intro {
-    color: #9ca3af;
-}
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-3 text-center">
+                <div class="card mb-3 h-100 fancy-card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">R Statistics Project</h5>
+                        <p class="card-text">
+                            UK housing costs vs income: hypothesis testing & regression.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="#contact" class="btn custom-btn mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-/* ===============================
-   PORTFOLIO CARDS
-================================ */
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-lg-3 text-center">
+                <div class="card mb-3 h-100 fancy-card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Capstone Project</h5>
+                        <p class="card-text">
+                            End-to-end analytics solution with SQL + BI + storytelling.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="#contact" class="btn custom-btn mt-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-body#home .project-row {
-    margin-top: 45px;
-    row-gap: 30px;
-}
+        </div>
+    </div>
 
-body#home .fancy-card {
-    background: #111827;
-    border-radius: 26px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
+    <!-- Contact -->
+    <div class="container w-50 mt-5 mb-5 form-div" id="contact">
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <h3 class="text-center pt-3">Contact</h3>
 
-body#home .fancy-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 32px 70px rgba(0, 0, 0, 0.8);
-}
+                <label for="name">Name <span class="text-warning">*</span></label>
+                <input type="text" class="form-control" id="name" placeholder="Your name" required minlength="2">
+                <div class="invalid-feedback">Please enter your name (at least 2 characters).</div>
+            </div>
 
-body#home .fancy-card .card-title {
-    font-weight: 600;
-    color: #ffffff;
-}
+            <div class="form-group">
+                <label for="email">Email <span class="text-warning">*</span></label>
+                <input type="email" class="form-control" id="email" placeholder="Your email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
 
-body#home .fancy-card .card-text {
-    color: #9ca3af;
-}
+            <div class="form-group">
+                <label for="message">Message <span class="text-warning">*</span></label>
+                <textarea class="form-control" id="message" rows="4" required minlength="10"
+                    placeholder="Write your message..."></textarea>
+                <div class="invalid-feedback">Please enter a message (at least 10 characters).</div>
+            </div>
 
-/* ===============================
-   CONTACT FORM
-================================ */
+            <div id="formSuccess" class="alert alert-success d-none" role="alert">
+                Thanks! Your message is valid. (You can later connect this to EmailJS / Formspree.)
+            </div>
 
-body#home .form-div {
-    background: #111827;
-    border-radius: 26px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 28px 65px rgba(0, 0, 0, 0.8);
-    padding: 30px;
-}
+            <button type="submit" class="btn custom-btn mt-2" id="form-btn">Send</button>
 
-body#home .form-control {
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: #0a0f1f;
-    color: #e6f1ff;
-}
+        </form>
+    </div>
 
-body#home .form-control:focus {
-    border-color: #00f5ff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 245, 255, 0.25);
-}
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="socicons-list">
+            <li>
+                <a href="https://github.com/temitopeisterose" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/" target="_blank"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/AJ" target="_blank" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
 
-/* Validation */
+    <p class="copyright text-center mb-3">
+        Victoria Ajanaku &copy; <span id="year"></span>
+    </p>
 
-body#home .was-validated .form-control:invalid,
-body#home .form-control.is-invalid {
-    border-color: #ef4444;
-    box-shadow: 0 0 0 0.2rem rgba(239, 68, 68, 0.18);
-}
+    <!-- Dynamic year -->
+    <script src="js/year.js"></script>
 
-body#home .was-validated .form-control:valid,
-body#home .form-control.is-valid {
-    border-color: #22c55e;
-    box-shadow: 0 0 0 0.2rem rgba(34, 197, 94, 0.16);
-}
+    <!-- Form validation -->
+    <script>
+        (function () {
+            const form = document.getElementById("contactForm");
+            const success = document.getElementById("formSuccess");
+            if (!form) return;
 
-/* ===============================
-   SOCIAL ICONS
-================================ */
+            function isValidEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+            }
 
-body#home .socicons-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-    padding-left: 0;
-    margin: 35px 0 10px;
-}
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
 
-body#home .socicons-list li a {
-    width: 54px;
-    height: 54px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    text-decoration: none;
+                const email = document.getElementById("email");
 
-    background: #111827;
-    color: #00f5ff;
-    font-size: 24px;
+                let valid = form.checkValidity();
 
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
-}
+                if (email && !isValidEmail(email.value.trim())) {
+                    email.setCustomValidity("Invalid");
+                    valid = false;
+                } else if (email) {
+                    email.setCustomValidity("");
+                }
 
-body#home .socicons-list li a:hover {
-    transform: translateY(-3px);
-    background: #00f5ff;
-    color: #0a0f1f;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5);
-}
+                if (!valid) {
+                    event.stopPropagation();
+                    form.classList.add("was-validated");
+                    if (success) success.classList.add("d-none");
+                    return;
+                }
 
-/* ===============================
-   COPYRIGHT
-================================ */
+                form.classList.add("was-validated");
+                if (success) success.classList.remove("d-none");
+            });
+        })();
+    </script>
 
-body#home .copyright {
-    color: rgba(230, 241, 255, 0.65);
-    margin-top: 28px;
-    font-size: 0.95rem;
-}
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
