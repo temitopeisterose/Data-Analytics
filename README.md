@@ -14,5 +14,5 @@ Today – 31/01/2026
 I have learned some great Excel data cleaning concepts
 ## Week 3 – Foundations of Data Analytics
 
-Today – 07/02/2025:
+Today – 07/02/2026:
 I have learned some great Excel functions. These include IF, COUNTIF, SUMIF, AVERAGEIF, VLOOKUP/XLOOKUP, AND, OR, PIVOT TABLES AND CHARTS.
